@@ -1,9 +1,12 @@
+import Navigation from "../../components/navigation/Navigation"
+
 type Props = {}
 
-function discover({ }: Props) {
+export default function Discover({ }: Props) {
     return (
-        <div>discover</div>
+        <>
+            <Navigation />
+            <h1>discover</h1>
+        </>
     )
 }
-
-export default discover

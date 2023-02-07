@@ -1,10 +1,14 @@
 import React from 'react'
+import Navigation from '../../components/navigation/Navigation'
 
 type Props = {}
 
 function Join({ }: Props) {
     return (
-        <div>Join</div>
+        <>
+            <Navigation />
+            <h1>Join</h1>
+        </>
     )
 }
 

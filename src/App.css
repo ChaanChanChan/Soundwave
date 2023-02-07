@@ -23,18 +23,25 @@
     font-family: 'Poppins', sans-serif;
 }
 
+p{
+    font-size: 1.3rem;
+}
+
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
 ol, ul {
     list-style: none;
 }
 
-main{
-    width: 100vw;
+body{
     height: 100vh;
+    width: 100vw;
+    overflow: hidden;
     background-image: url(../public/images/background.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

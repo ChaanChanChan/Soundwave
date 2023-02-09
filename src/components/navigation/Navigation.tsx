@@ -1,13 +1,12 @@
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import styles from './navigation.module.css'
 
 type Props = {}
 
 export default function Navigation({ }: Props) {
     return (
-        <Navbar expand="sm" className={styles.navigation}>
-            <Container>
+        <Navbar className="mt-3">
+            <Container fluid="sm">
                 <Navbar.Brand>
                     <img
                         alt=""
@@ -17,15 +16,15 @@ export default function Navigation({ }: Props) {
                         className="d-inline-block align-center"
                     />{' '}
                     <Navbar.Text className="d-inline-block align-center">
-                        <Link to={'/'} className="text-white ms-3">Soundwave</Link>
+                        <Link to={'/'} className="text-white ms-3 text-decoration-none">Soundwave</Link>
                     </Navbar.Text>
                 </Navbar.Brand>
-                <Nav className="ms-auto">
-                    <Nav.Link className="text-white me-5">
-                        <Link to={'/discover'}>Discover</Link>
+                <Nav className="flex-nowrap">
+                    <Nav.Link>
+                        <Link to={'/discover'} className="text-decoration-none text-white">Discover</Link>
                     </Nav.Link>
-                    <Nav.Link className="text-white">
-                        <Link to={'/join'}>Join</Link>
+                    <Nav.Link>
+                        <Link to={'/join'} className="text-decoration-none text-white">Join</Link>
                     </Nav.Link>
                 </Nav>
             </Container>

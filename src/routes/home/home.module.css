@@ -1,0 +1,8 @@
+.girl{
+    width: 100%;
+    height: 70vh;
+    background-image: url(/public/images/landing-page-girl.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
